@@ -1,12 +1,12 @@
 $('#menu-social > li > a').removeClass("nav-link").addClass("");
-$('#menu-social > li').addClass("list-inline-item");
+$('.menusocial > li').addClass("list-inline-item");
 $('#menu-navbar > li').addClass("nav-item");
 $('.sub-menu > li').addClass("dropdown-item");
 $('.sub-menu > li > a').removeClass("nav-link waves-effect waves-light");
 
 
 
-$('.carousel1').carousel({
+/*$('.carousel1').carousel({
   interval: 3000
 })
 $('.carousel2').carousel({
@@ -14,7 +14,7 @@ $('.carousel2').carousel({
 })
 
 $('.list-inline-item').attr('target', '_blank');
-
+*/
 
 $('#paginate > ul').removeClass("page-numbers").addClass("pagination pg-blue justify-content-center");
 $('#paginate > ul >li').removeClass("page-numbers").addClass("page-item");

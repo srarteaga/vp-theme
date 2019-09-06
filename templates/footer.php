@@ -1,29 +1,39 @@
+<div class="icon-bar text-center">
+      <?php
+        wp_nav_menu(array(
+          'theme_location' => 'footer-menu',
+          'container' => 'ul',
+          'menu_id' => 'menu-social',
+          'menu_class' => 'list-inline-item'
+        ));
+      ?> 
+</div>
  <div id=marq class="container-fluid">
   <h1 class="text-center display-4 font-Lobster">Entes adscritos</h1>
   <span id=orig>
-    <a href="http://www.misionmilagro.gob.ve"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-milagro.png" style="width: 8%"></a>
-    <a href="http://www.sunai.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sunai.png" style="width: 8%"></a>
-    <a href="http://www.sata.gob.ve/web/home/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sata.png" style="width: 8%"></a>
-    <a href="http://vicepresidencia.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sebin.png" style="width: 8%"></a>
-    <a href="http://consejoderechoshumanos.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-consejo-comunal.png" style="width: 8%"></a>
-    <a href="http://www.cfg.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-consejo-federal.png" style="width: 8%"></a>
-    <a href="http://www.misionnevado.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-nevado.png" style="width: 8%"></a>
-    <a href="http://www.misionesbolivarianas.com/gran-mision-saber-y-trabajo/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-saber.png" style="width: 8%"></a>
-    <a href="http://www.supcriptove.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-subcipto.png" style="width: 8%"></a>
-    <a href="http://www.snc.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-snc.png" style="width: 8%"></a>
-    <a href="http://www.superintendenciadepreciosjustos.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-rupdae.png" style="width: 8%"></a>
+    <a href="http://www.misionmilagro.gob.ve" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-milagro.png" style="width: 8%"></a>
+    <a href="http://www.sata.gob.ve/web/home/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sata.png" style="width: 8%"></a>
+    <a href="http://vicepresidencia.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sebin.png" style="width: 8%"></a>
+    <a href="http://www.misionnevado.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-nevado.png" style="width: 8%"></a>
+    <a href="http://www.hogaresdelapatria.org/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/hogares.png" style="width: 8%"></a>
+    <a href="https://www.patria.org.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/patria_logo_login.png" style="width: 8%"></a>
+    <a href="https://www.barriotricolor.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/barrio-tricolor.png" style="width: 8%"></a>
+    <a href="http://www.fundeeh.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/fundeeh.jpeg" style="width: 8%"></a>
+    <a href="https://www.barriotricolor.gob.ve/index.php/nosotros/corporacion-bnbt" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/corporacion-tricolor.png" style="width: 8%"></a>
+    <a href="http://www.snc.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-snc.png" style="width: 8%"></a>
+    <a href="http://vicepresidencia.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/sp3.png" style="width: 8%"></a>
     <span id=copia>
-      <a href="http://www.misionmilagro.gob.ve"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-milagro.png" style="width: 8%"></a>
-      <a href="http://www.sunai.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sunai.png" style="width: 8%"></a>
-      <a href="http://www.sata.gob.ve/web/home/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sata.png" style="width: 8%"></a>
-      <a href="http://vicepresidencia.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sebin.png" style="width: 8%"></a>
-      <a href="http://consejoderechoshumanos.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-consejo-comunal.png" style="width: 8%"></a>
-      <a href="http://www.cfg.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-consejo-federal.png" style="width: 8%"></a>
-      <a href="http://www.misionnevado.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-nevado.png" style="width: 8%"></a>
-      <a href="http://www.misionesbolivarianas.com/gran-mision-saber-y-trabajo/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-saber.png" style="width: 8%"></a>
-      <a href="http://www.supcriptove.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-subcipto.png" style="width: 8%"></a>
-      <a href="http://www.snc.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-snc.png" style="width: 8%"></a>
-      <a href="http://www.superintendenciadepreciosjustos.gob.ve/"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-rupdae.png" style="width: 8%"></a>
+      <a href="http://www.misionmilagro.gob.ve" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-milagro.png" style="width: 8%"></a>
+      <a href="http://www.sata.gob.ve/web/home/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sata.png" style="width: 8%"></a>
+      <a href="http://vicepresidencia.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-sebin.png" style="width: 8%"></a>
+      <a href="http://www.misionnevado.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-mision-nevado.png" style="width: 8%"></a>
+      <a href="http://www.hogaresdelapatria.org/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/hogares.png" style="width: 8%"></a>
+      <a href="https://www.patria.org.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/patria_logo_login.png" style="width: 8%"></a>
+      <a href="https://www.barriotricolor.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/barrio-tricolor.png" style="width: 8%"></a>
+      <a href="http://www.fundeeh.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/fundeeh.jpeg" style="width: 8%"></a>
+      <a href="https://www.barriotricolor.gob.ve/index.php/nosotros/corporacion-bnbt" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/corporacion-tricolor.png" style="width: 8%"></a>
+      <a href="http://www.snc.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-snc.png" style="width: 8%"></a>
+      <a href="http://vicepresidencia.gob.ve/" class="m-2" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/sp3.png" style="width: 8%"></a>
     </span>
   </span>
 </div>
@@ -37,7 +47,7 @@
           'theme_location' => 'footer-menu',
           'container' => 'ul',
           'menu_id' => 'menu-social',
-          'menu_class' => 'list-inline-item'
+          'menu_class' => 'list-inline-item menusocial'
         ));
       ?> 
     </div>

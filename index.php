@@ -1,61 +1,73 @@
 <?php get_header() ?>
 <?php get_template_part('templates/header') ?>
 <?php get_template_part('templates/carousel') ?>
-<div class="row row-no-padding">
-  <div class="col-sm-9">
+<div class="row row-no-padding mr-auto">
+  <div class="col-md-9">
     <?php get_template_part('templates/slider') ?>
+    <div class="container-fluid text-center" id="separator-container"><!--style="background-color: #eeeeee;"-->
+      <div class="container pt-3 pb-3">
+        <h2 class="h2-responsive pb-4"><b>Multimedia</b></h2>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item  ml-auto mr-5">
+            <a class="active btn-floating icon-menu fa fa-video-camera pt-4" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+              aria-controls="pills-home" aria-selected="true"></a>
+              <h5 class="h5-responsive font-Lobster">Videos</h5> 
+          </li>
+          <li class="nav-item mr-auto ml-5">
+            <a class="btn-floating icon-menu fa fa-picture-o rgba-black-strong pt-4" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+              aria-controls="pills-profile" aria-selected="false"></a>
+              <h5 class="h5-responsive font-Lobster">Galeria</h5>
+          </li>
+          <!--
+          <li class="nav-item mr-auto ml-auto">
+            <a class="btn-floating icon-menu fa fa-book pt-4" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+              aria-controls="pills-contact" aria-selected="false"></a>
+              <h5 class="h5-responsive font-Lobster">Publicaciones</h5>
+          </li>
+          -->
+        </ul>
+      </div>
+    </div>
+    <div class="tab-content pl-1" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="container pt-2">
+          <div class="title-entradas text-center pt-4">
+            <b class="text-pill">Videos</b>
+          </div>
+          <div style="margin-top: -50px !important;">
+            <?php echo do_shortcode( '[yotuwp type="channel" id="UCrQidgOchKhJPfa5uwd2U1g" ]' ); ?>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="container pt-2">
+          <div class="title-entradas text-center pt-4">
+            <b class="text-pill">Galeria</b>
+          </div>
+          <div class="container text-center">
+            <?php echo do_shortcode( '[ngg src="recent_images" display="basic_thumbnail" display_view="default" maximum_entity_count="24" number_of_columns="4" override_thumbnail_settings="1" thumbnail_width="250" thumbnail_height="180"]' ); ?>
+          </div>
+          
+        </div>
+      </div>
+      <!--
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      PUBLICACIONES
+      </div>
+      -->
+    </div>
   </div>
-  <div class="col-sm-3">
+  <!-- INICIO SLIDEBAR -->
+  <div class="col-md-3 d-none d-lg-block d-md-block d-xl-block">
     <?php get_template_part('templates/wiggets')  ?>
   </div>
 </div>
 
-<div class="container-fluid text-center" id="separator-container"><!--style="background-color: #eeeeee;"-->
-  <div class="container pt-5 pb-5">
-    <h2 class="h2-responsive font-Lobster pb-4">Multimedia</h2>
-    <div class="row">
-      <div class="col-md-4">
-          <a href="<?php echo site_url() ?>/index.php/galeria" class="btn-floating icon-menu fa fa-picture-o rgba-black-strong"></a> 
-          <h4 class="h4-responsive font-Lobster">Galeria</h4> 
-      </div>
-      <div class="col-md-4">
-        <a href="<?php echo site_url() ?>/index.php/videos" class="btn-floating icon-menu fa fa-video-camera"></a>  
-        <h4 class="h4-responsive font-Lobster">Videos</h4>
-      </div>
-      <div class="col-md-4">
-        <a href="<?php echo site_url() ?>/index.php/publicaciones" class="btn-floating icon-menu fa fa-book"></a>  
-        <h4 class="h4-responsive font-Lobster">Publicaciones</h4>
-      </div>
-    </div>
-  </div>
-</div>
-<hr>
 
-<div class="container-fluid fond-social pb-3">
-  <div class="row text-center">
-    <div class="col-lg-4">
-      <h4 class="font-Lobster pt-2 pb-2 text-dark">Twitter</h4>
-      <a class="twitter-timeline" data-height="800" data-width="500" href="https://twitter.com/ViceVenezuela?ref_src=twsrc%5Etfw">Tweets por ViceVenezuela</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-    </div>
-    <div class="col-lg-4">
-      <h4 class="font-Lobster pt-2 pb-2 text-dark">Instagram</h4>
-        <div class="instagra-feed">
-          <?php echo do_shortcode('[jr_instagram id="2"]'); ?>
-        </div>
-    </div>
-    <div class="col-lg-4">
-      <h4 class="font-Lobster pt-2 pb-2 text-dark">Facebook</h4>
-        <?php if ( is_active_sidebar( 'facebook_id' ) ) : ?>
-          <div class="facebook-feed">
-            <?php dynamic_sidebar( 'facebook_id' ); ?>
-          </div>
-        <?php endif; ?>
-    </div>
-  </div>
-</div>
-<hr>
+<!--
 <div class="container text-center">
   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo-vicepresidencia.png" style="width: 65%">
 </div>
+-->
 <hr>
 <?php get_footer() ?>

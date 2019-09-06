@@ -204,3 +204,83 @@ function wp_youtube_widget() {
 }
 add_action( 'widgets_init', 'wp_youtube_widget' );
 
+register_sidebar( array(
+'name' => __( 'Widget lateral', 'theme-slug' ),
+'id' => 'sidebar-1',
+'description' => __( 'Widget para el sidebar.', 'theme-slug' ),
+'before_widget' => '<div class="pt-6"><div class="border-title">',
+'after_widget' => '</div></div>',
+'before_title' => '<h2 class="ml-4">',
+'after_title' => '</h2>',
+) );
+
+function getRelatedPosts ($post_id){
+  $taxs = wp_get_post_tags( $post_id );
+
+
+  $tax_ids = array();
+  foreach( $taxs as $individual_tax ) $tax_ids[] = $individual_tax->term_id;
+
+
+  $my_query = new WP_QUERY(array(
+              'category__in'    => $categ,
+              'posts_per_page'  => 8,
+              'post__not_in'    =>array(get_the_ID()),
+              //'orderby'     =>'rand'
+              ));
+  if( $my_query->have_posts() ) {
+
+    while ($my_query->have_posts()) : $my_query->the_post();
+     ?>
+     <div class="col-md-3">
+        <a href="<?php the_permalink();?>">
+
+            <?php the_post_thumbnail('thumbnail');?>
+        </a>
+        <p>
+          <a href=" <?php the_permalink();?> " rel="bookmark" title=" <?php the_title(); ?> ">
+            <?php the_title() ?>
+          </a>
+        </p>
+     </div>
+     
+     <?php
+    endwhile;
+  } 
+  else {
+    echo "<h4>No hay clases relacionadas</h4>";
+  }
+
+
+  $post = $backup;
+  wp_reset_query();
+}
+ 
+// Función para contar visualizaciones de un post.
+function set_post_views() {
+    if (is_single()) {
+        $post_ID = get_the_ID();
+        $count = get_post_meta( $post_ID, 'post_views', true );
+ 
+        if ( $count == '' ) {
+            delete_post_meta( $post_ID, 'post_views' );
+            add_post_meta( $post_ID, 'post_views', 1 );
+        } else {
+            update_post_meta( $post_ID, 'post_views', ++$count );
+        }
+    }
+}
+add_action( 'wp', 'set_post_views' );
+ 
+// Función para obtener el número de visualizaciones de un post
+function get_post_views($post_ID){
+    $count = get_post_meta($post_ID, 'post_views', true);
+ 
+    if ($count == ''){
+        delete_post_meta($post_ID, 'post_views');
+        add_post_meta($post_ID, 'post_views', 0);
+        return 0;
+    }
+    return $count;
+}
+

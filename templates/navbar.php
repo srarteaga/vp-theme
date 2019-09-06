@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-xl navbar-dark scrolling-navbar" id="p">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" id="p">
   <!-- logo -->
  <?php 
    /* if ( has_custom_logo() ) {
