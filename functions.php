@@ -283,4 +283,3 @@ function get_post_views($post_ID){
     }
     return $count;
 }
-
