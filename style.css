@@ -215,6 +215,9 @@ margin-top: 10px;
   -moz-osx-font-smoothing: grayscale;
 
 }
+.text-hidden{
+    display: none;
+}
 
 #menu-social li a[href*="facebook.com"] {
   background-color: #3b5998;
