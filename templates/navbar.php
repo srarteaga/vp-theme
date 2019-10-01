@@ -6,8 +6,10 @@
     } else {
       echo '<a href="'.home_url().'" class="h6 navbar-brand">'. get_bloginfo( 'name' ) .'</a>';
     }*/
+    $url = home_url( '/' );
+
   ?>
-  <a href="<?php echo home_url() ?>">
+  <a href="<?php echo esc_url( $url ); ?>">
     <img src="<?php echo get_stylesheet_directory_uri() ?>/img/cintillo web-01.png" style="height: 7vh;">
 
     <img src="<?php echo get_stylesheet_directory_uri() ?>/img/cintillo web-02.png" style="height: 5vh; border-left: 2px solid #FFFFFF;" class="vice-logo">

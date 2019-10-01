@@ -27,7 +27,9 @@
             <img class="d-block imagen-carousel" src="<?php echo $ruta_imagen; ?>" alt="First slide">
             <div class="mask">
               <div class="fixed-bottom">
-                <?php the_title( '<h3 class="h3-responsive text-white rgba-black-strong pb-5 w-100 text-center" style="margin-bottom: -5px;">', '</h3>' );?>
+                <a href="<?php the_permalink() ?>">
+                  <?php the_title( '<h3 class="h3-responsive text-white rgba-black-strong pb-5 w-100 text-center" style="margin-bottom: -5px;">', '</h3>' );?>
+                </a>
               </div>
             </div>
           </div>

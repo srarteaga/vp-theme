@@ -1,7 +1,7 @@
 <div class="pt-6">
   <div class="border-title">
     <div class="title-entradas text-center">
-      <span class="text-entrada">Entradas Recientes</span>
+      <span class="text-entrada">Noticias Recientes</span>
     </div>
   <div class="container">
     <div class="table-responsive">
