@@ -1,6 +1,5 @@
   <!--Carousel Wrapper-->
 <div id="carousel-header" class="carousel carousel1 slide carousel-fade" data-ride="carousel">
-
   <!--Slides-->
   <div class="carousel-inner" role="listbox">
     <?php
