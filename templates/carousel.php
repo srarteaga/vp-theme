@@ -27,7 +27,7 @@
             <div class="mask">
               <div class="fixed-bottom">
                 <a href="<?php the_permalink() ?>">
-                  <?php the_title( '<h3 class="h3-responsive text-white rgba-black-strong pb-5 w-100 text-center" style="margin-bottom: -5px;">', '</h3>' );?>
+                  <?php the_title( '<h3 class="h3-responsive text-white rgba-black-strong pb-5 w-100 text-center font-weight-bold" style="margin-bottom: -5px;">', '</h3>' );?>
                 </a>
               </div>
             </div>

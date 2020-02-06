@@ -1,9 +1,9 @@
 <?php 
 
 function wp_scripts_actions() {
-  wp_enqueue_script( 'popperjs', get_template_directory_uri() . '/js/popper.min.js', array(), null, true );
-  wp_enqueue_script( 'jquery3', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '1.0.0', true );
-  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'jquery3', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'popperjs', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js', array(), null, true );
+  wp_enqueue_script( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js', array(), '1.0.0', true );
   wp_enqueue_script( 'mdb', get_template_directory_uri() . '/js/mdb.min.js', array(), '1.0.0', true );
   wp_enqueue_script( 'wp-functions', get_template_directory_uri() . '/js/wp-functions.js', array(), '1.0.0', true );
 }
@@ -47,6 +47,7 @@ add_filter( 'nav_menu_link_attributes', 'wp_class_navbar', 10, 3 );
 
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'carousel', 1300, 650, true );
+add_image_size( 'car-especial', 250, 250, true );
 
 function noticia_init() {
     $labels = array(

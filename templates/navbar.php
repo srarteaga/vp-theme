@@ -24,10 +24,11 @@
         'theme_location' => 'navbar-menu',
         'menu_id' => 'menu-navbar',
         'container' => 'ul',
-        'menu_class' => 'navbar-nav'
+        'menu_class' => 'navbar-nav font-weight-bold'
       ));
     ?>
     <?php get_search_form(); ?> 
+    <?php echo do_shortcode('[gtranslate]'); ?>
   </div>
 
 </nav>

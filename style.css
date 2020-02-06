@@ -147,7 +147,7 @@ div.page-nav .navbar{
 
 }
 #menu-navbar li ul li a {
-    color: white !important;
+  color: white !important;
 }
 
 #menu-navbar li ul :hover{
@@ -343,6 +343,10 @@ margin-top: 10px;
   .icon-bar ul li a{
 
   }
+  .imagen-carousel{
+    height: 100vh;
+    width: 100%
+  }
 }
 @media only screen and (max-width: 775px) {
   .img-thum{
@@ -352,6 +356,7 @@ margin-top: 10px;
 
     display:none !important;
   }
+
   .menusocial li a{
     width: 50px;
     height: 50px;
@@ -737,6 +742,10 @@ div.border-title{
   .title-entradas:before {
     margin: 0 3px 4px 0;
   }
+  .imagen-carousel{
+    height: 65vh;
+    width: 100%
+  }
 }
 @media only screen and (max-width: 780px) {
   .title-entradas:after {
@@ -765,6 +774,9 @@ div.border-title{
   .img-slide{
     height: 60vh;
   }
+  .imagen-carousel{
+    margin-top: 68px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .img-slide{
@@ -780,6 +792,16 @@ li .h5-responsive{
     display: none;
   }
 }
+
+@media only screen and (max-width: 460px){
+  .imagen-carousel{
+    margin-top: 63px;
+    height: 50vh;
+    width: 100%
+  }
+}
+
+
 
 
 
