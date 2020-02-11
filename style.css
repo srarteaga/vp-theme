@@ -891,3 +891,6 @@ height: 20vh;
   width: 100% !important;
   height: 22vh !important;
 }
+.btn-floating{
+  font-size: 50px !important;
+}

@@ -4,9 +4,9 @@
 <div class="row row-no-padding mr-auto">
   <div class="col-md-9">
     <?php get_template_part('templates/slider') ?>
-    <div class="container-fluid text-center" id="separator-container"><!--style="background-color: #eeeeee;"-->
-      <div class="container pt-3 pb-3">
-        <h2 class="h2-responsive pb-4"><b>Multimedia</b></h2>
+    <div class="w-100 text-center" id="separator-container" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/fondo2.JPG); -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; width: 100%;"><!--style="background-color: #eeeeee;"-->
+      <div class="rgba-black-light py-5 px-4">
+        <h2 class="h2-responsive pb-4 font-Lobster"><b>Multimedia</b></h2>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item  ml-auto mr-5">
             <a class="active btn-floating icon-menu fa fa-video-camera pt-4" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
@@ -34,8 +34,8 @@
           <div class="title-entradas text-center pt-4">
             <b class="text-pill">Videos</b>
           </div>
-          <div style="margin-top: -50px !important;">
-            <?php echo do_shortcode( '[yotuwp type="channel" id="UCrQidgOchKhJPfa5uwd2U1g" ]' ); ?>
+          <div style="margin-top: 20px !important;">
+            <?php echo do_shortcode( '[automatic_youtube_gallery type="channel" channel="UCrQidgOchKhJPfa5uwd2U1g" columns="4" per_page="8" thumb_excerpt="0"]' ); ?>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
             <b class="text-pill">Galeria</b>
           </div>
           <div class="container text-center">
-            <?php echo do_shortcode( '[ngg src="recent_images" display="basic_thumbnail" display_view="default" maximum_entity_count="24" number_of_columns="4" override_thumbnail_settings="1" thumbnail_width="250" thumbnail_height="180"]' ); ?>
+            <?php echo do_shortcode( '[ngg src="galleries" ids="2" display="basic_thumbnail" thumbnail_crop="0"]' ); ?>
           </div>
           
         </div>
@@ -55,6 +55,9 @@
       PUBLICACIONES
       </div>
       -->
+
+
+
     </div>
   </div>
   <!-- INICIO SLIDEBAR -->
@@ -62,7 +65,6 @@
     <?php get_template_part('templates/wiggets')  ?>
   </div>
 </div>
-
 
 <!--
 <div class="container text-center">

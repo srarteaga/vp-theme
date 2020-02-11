@@ -86,7 +86,7 @@
   </div>
   <!--/.Carousel Wrapper-->
   <div class="text-center pt-6 lobster">
-    <a href="<?php echo site_url() ?>/?page_id=2" class="btn btn-info btn-noticia" >Mas noticias</a>
+    <a href="<?php echo site_url() ?>/noticias" class="btn btn-info btn-noticia" >Mas noticias</a>
   </div>
 </div>
 <hr>
