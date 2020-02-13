@@ -113,9 +113,14 @@
             <a href="https://www.patria.org.ve/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/Boton-para-web.gif" style="width: 70%"></a>
           </div>
           <hr>
-
-          <div class="text-center pb-1">
-            <a href="http://www.imprentanacional.gob.ve/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/gaceta.jpg" style="width: 70%"></a>
+          <div class="text-center">
+            <a href="http://www.barriotricolor.gob.ve/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/BNBT-LOGO.png" style="width: 70%"></a>
+          </div>
+          <hr>
+          <div class="text-center">
+        <!--   <a href="http://www.barriotricolor.gob.ve/" target="_blank"> -->
+            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/Nuevo-logo-Venezuela-Bella.png" style="width: 70%">
+        <!--   </a> -->
           </div>
           <hr>
           <div class="title-entradas text-center pt-2">

@@ -1,4 +1,4 @@
-<?php /* Template Name: Noticias */ ?>
+<?php /* Template Name: Especiales */ ?>
 <?php get_header() ?>
 
 <?php if ($paged>1): ?>
@@ -17,9 +17,9 @@
       echo '<div class="row no-gutters">';
       echo '<div class="offset-lg-1 col-md-8">';
     }
-    $wp_query = new WP_Query('category_name=noticias&posts_per_page=10&paged=' . $paged);
+    $wp_query = new WP_Query('category_name=especiales&posts_per_page=10&paged=' . $paged);
     while ($wp_query->have_posts()) : $wp_query->the_post();
-      $imagen = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'noticia');
+      $imagen = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'especiales');
       $post_id = get_the_ID();
       $ruta_imagen = $imagen[0];
       $num++;

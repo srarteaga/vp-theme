@@ -28,10 +28,8 @@ $('.facebook-feed >li ').removeClass("widget widget_easy_facebook_page_plugin").
 
 
 $('#menu-social > li > a').removeClass("nav-link").addClass("");
-twttr.widgets.createTimeline(
-  {
-    sourceType: "profile",
-    screenName: "TwitterDev"
-  },
-  document.getElementById("container")
-);
+$('#galery > .ngg-galleryoverview > .ngg-navigation').addClass("m-hidden");
+
+
+
+galery

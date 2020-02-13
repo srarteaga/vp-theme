@@ -89,9 +89,8 @@
     <a href="<?php echo site_url() ?>/noticias" class="btn btn-info btn-noticia" >Mas noticias</a>
   </div>
 </div>
-<hr>
-<div class="ml-sm-4 pb-5">
-  <div class="border-title">
+<div class="ml-sm-4 pb-5 pt-2">
+  <div class="border-title text-white rgba-black-strong">
     <h2 class="ml-5">Especiales</h2>
   </div>
   <div class="pt-3">
@@ -196,15 +195,7 @@
                   <div class="card card-image" style="background-image: url(<?php echo $ruta_imagen; ?>); -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; width: 100%; height: 35vh;">
                     <div class="text-white text-center d-flex align-items-center rgba-black-light py-5 px-4" style="width: 100%; height: 35vh;">
                       <div class="align-bottom mt-5 pt-5">
-                        <?php the_title( '<h5 class="card-title pt-5 mt-5" style="text-shadow: 0px 0px 5px #000000 !important;"><strong>', '</strong></h5>' );?>
-<!--                         <p style="text-shadow: 5px 5px 5px #000000 !important;">
-                          <?php
-                            $content = get_the_excerpt();
-                            $postOutput = preg_replace('/<img[^>]+./','', $content);
-                            $postOutput = wp_filter_nohtml_kses( $postOutput );
-                            echo substr($postOutput, 0, 160)." […]"; 
-                          ?>
-                        </p> -->
+                        <?php the_title( '<h5 class="card-title pt-5 mt-5 font-weight-bold" style="text-shadow: 0px 0px 5px #000000 !important;"><strong>', '</strong></h5>' );?>
                         <div>
                           <a class="btn btn-cyan waves-effect rounded" href="<?php the_permalink() ?>">Leer mas...</a>
                         </div>
@@ -232,6 +223,6 @@
   </div>
   <!--/.Carousel Wrapper-->
   <div class="text-center pt-6 lobster">
-    <a href="<?php echo site_url() ?>/?page_id=2" class="btn btn-info btn-noticia" >Mas especiales</a>
+    <a href="<?php echo site_url() ?>/especiales" class="btn btn-info btn-noticia" >Mas especiales</a>
   </div>
 </div>

@@ -35,7 +35,7 @@
             <b class="text-pill">Videos</b>
           </div>
           <div style="margin-top: 20px !important;">
-            <?php echo do_shortcode( '[automatic_youtube_gallery type="channel" channel="UCrQidgOchKhJPfa5uwd2U1g" columns="4" per_page="8" thumb_excerpt="0"]' ); ?>
+            <?php echo do_shortcode( '[automatic_youtube_gallery type="channel" channel="UCrQidgOchKhJPfa5uwd2U1g" columns="4" per_page="4" thumb_excerpt="0"]' ); ?>
           </div>
         </div>
       </div>
@@ -44,8 +44,8 @@
           <div class="title-entradas text-center pt-4">
             <b class="text-pill">Galeria</b>
           </div>
-          <div class="container text-center">
-            <?php echo do_shortcode( '[ngg src="galleries" ids="2" display="basic_thumbnail" thumbnail_crop="0"]' ); ?>
+          <div class="container text-center" id="galery">
+            <?php echo do_shortcode( '[ngg src="galleries" ids="2" display="basic_thumbnail" thumbnail_crop="0" images_per_page="20" number_of_columns="4" show_all_in_lightbox="1" use_imagebrowser_effect="1"]' ); ?>
           </div>
           
         </div>

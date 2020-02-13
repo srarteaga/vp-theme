@@ -11,6 +11,10 @@
   Tags: Material Design, Bootstrap, Modern, 
 */
 
+body{
+  font-family: 'PT Serif', serif;
+}
+
 
 .header-homepage:not(.header-slide).background-overlay,.header-homepage:not(.header-slide).color-overlay::before{
   opacity:0.3;
@@ -453,7 +457,7 @@ a:focus {
   color: white !important;
 }
 .img-noti{
-  height: 750px !important;
+  height: 850px !important;
 }
 
 

@@ -60,3 +60,8 @@
   </div>
   <!--/.Copyright-->
 </footer>
+  <style type="text/css">
+    .m-hidden{
+  display: none !important;
+  }
+</style>
