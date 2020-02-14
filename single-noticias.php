@@ -126,7 +126,7 @@
       <hr>
       <div class="text-center">
     <!--   <a href="http://www.barriotricolor.gob.ve/" target="_blank"> -->
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/Nuevo-logo-Venezuela-Bella.png" style="width: 70%">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/venezuelabella.gif" style="width: 70%">
     <!--   </a> -->
       </div>
       <hr>
