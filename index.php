@@ -45,7 +45,7 @@
             <b class="text-pill">Galeria</b>
           </div>
           <div class="container text-center" id="galery">
-            <?php echo do_shortcode( '[ngg src="galleries" ids="3" display="basic_thumbnail" thumbnail_crop="0" images_per_page="20" number_of_columns="4" show_all_in_lightbox="1" use_imagebrowser_effect="1"]' ); ?>
+            <?php echo do_shortcode( '[ngg src="galleries" display="basic_thumbnail" thumbnail_crop="0" images_per_page="36" number_of_columns="4" ajax_pagination="0"]' ); ?>
           </div>
           
         </div>

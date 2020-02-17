@@ -28,8 +28,9 @@ $('.facebook-feed >li ').removeClass("widget widget_easy_facebook_page_plugin").
 
 
 $('#menu-social > li > a').removeClass("nav-link").addClass("");
+
 $('#galery > .ngg-galleryoverview > .ngg-navigation').addClass("m-hidden");
 
 
 
-galery
+
