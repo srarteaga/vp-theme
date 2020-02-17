@@ -4,7 +4,7 @@
 <div class="row row-no-padding mr-auto">
   <div class="col-md-9">
     <?php get_template_part('templates/slider') ?>
-    <div class="w-100 text-center" id="separator-container" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/fondo2.JPG); -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; width: 100%;"><!--style="background-color: #eeeeee;"-->
+    <div class="w-100 text-center" id="separator-container" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/para-web.jpg); -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; width: 100%;"><!--style="background-color: #eeeeee;"-->
       <div class="rgba-black-light py-5 px-4">
         <h2 class="h2-responsive pb-4 font-Lobster"><b>Multimedia</b></h2>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -45,7 +45,7 @@
             <b class="text-pill">Galeria</b>
           </div>
           <div class="container text-center" id="galery">
-            <?php echo do_shortcode( '[ngg src="galleries" ids="2" display="basic_thumbnail" thumbnail_crop="0" images_per_page="20" number_of_columns="4" show_all_in_lightbox="1" use_imagebrowser_effect="1"]' ); ?>
+            <?php echo do_shortcode( '[ngg src="galleries" ids="3" display="basic_thumbnail" thumbnail_crop="0" images_per_page="20" number_of_columns="4" show_all_in_lightbox="1" use_imagebrowser_effect="1"]' ); ?>
           </div>
           
         </div>
