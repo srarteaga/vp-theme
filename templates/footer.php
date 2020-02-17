@@ -56,7 +56,7 @@
   <!--Copyright-->
   <div class="footer-copyright py-3">
   	<p>Vicepresidencia de la República Bolivariana de Venezuela</p>
-  	<p>Dirección General de Tecnología de la Información - &copy; 2018 Todos los Derechos Reservados</p>
+  	<p>Dirección General de Tecnología de la Información - &copy; 2020 Todos los Derechos Reservados</p>
   </div>
   <!--/.Copyright-->
 </footer>
