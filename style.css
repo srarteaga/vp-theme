@@ -22,7 +22,7 @@ body{
 }
 
 .header-homepage .header-description-row{
-  padding-top: 26%;
+  padding-top: 26%;c
   padding-bottom:26%;
 }
 
@@ -229,11 +229,17 @@ margin-top: 10px;
   -moz-box-shadow: inset -1px 0px 43px -3px rgba(0,0,0,0.41);
   box-shadow: inset -1px 0px 43px -3px rgba(0,0,0,0.41);
 }
+#menu-social li a[href*="www.facebook.com"] {
+  background-color: #3b5998;
+  -webkit-box-shadow: inset -1px 0px 43px -3px rgba(0,0,0,0.41);
+  -moz-box-shadow: inset -1px 0px 43px -3px rgba(0,0,0,0.41);
+  box-shadow: inset -1px 0px 43px -3px rgba(0,0,0,0.41);
+}
 #menu-social li a[href*="www.facebook.com"]::before {
-  content: "\f09a";
+  content: "\f39e";
 }
 #menu-social li a[href*="facebook.com"]::before {
-  content: "\f09a";
+  content: "\f39e";
 }
 #menu-social li a[href*="twitter.com"]{
   background-color: #55acee;
