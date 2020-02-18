@@ -8,15 +8,15 @@
       <div class="rgba-black-light py-5 px-4">
         <h2 class="h2-responsive pb-4 font-Lobster"><b>Multimedia</b></h2>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-<!--           <li class="nav-item  ml-auto mr-5">
-            <a class=" btn-floating icon-menu fa fa-video-camera pt-4" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-              aria-controls="pills-home" aria-selected="true"></a>
-              <h5 class="h5-responsive font-Lobster">Videos</h5> 
-          </li> -->
-          <li class="nav-item mr-auto ml-5">
-            <a class="active btn-floating icon-menu fa fa-picture-o rgba-black-strong pt-4" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+          <li class="nav-item  ml-auto">
+            <a class="btn-floating icon-menu fa fa-picture-o rgba-black-strong pt-4" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
               aria-controls="pills-profile" aria-selected="false"></a>
               <h5 class="h5-responsive font-Lobster">Galeria</h5>
+          </li>
+          <li class="nav-item mr-auto ml-5">
+<!--             <a class="btn-floating icon-menu fa fa-picture-o rgba-black-strong pt-4" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+              aria-controls="pills-profile" aria-selected="false"></a>
+              <h5 class="h5-responsive font-Lobster">Galeria</h5> -->
           </li>
           <!--
           <li class="nav-item mr-auto ml-auto">
@@ -29,27 +29,18 @@
       </div>
     </div>
     <div class="tab-content pl-1" id="pills-tabContent">
-<!--       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="container pt-2">
-          <div class="title-entradas text-center pt-4">
-            <b class="text-pill">Videos</b>
-          </div>
-          <div style="margin-top: 20px !important;">
-            <?php echo do_shortcode( '[automatic_youtube_gallery type="channel" channel="UCrQidgOchKhJPfa5uwd2U1g" columns="4" per_page="4" thumb_excerpt="0"]' ); ?>
-          </div>
-        </div>
-      </div> -->
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="container pt-2">
           <div class="title-entradas text-center pt-4">
             <b class="text-pill">Galeria</b>
           </div>
           <div class="container text-center" id="galery">
-            <?php echo do_shortcode( '[ngg src="galleries" display="basic_thumbnail" thumbnail_crop="0" images_per_page="36" number_of_columns="4" ajax_pagination="0"]' ); ?>
+            <?php echo do_shortcode( '[ngg src="galleries" display="basic_thumbnail" thumbnail_crop="0" images_per_page="16" number_of_columns="4" ajax_pagination="0"]' ); ?>
           </div>
           
         </div>
       </div>
+
       <!--
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
       PUBLICACIONES
