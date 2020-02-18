@@ -11,8 +11,10 @@
   Tags: Material Design, Bootstrap, Modern, 
 */
 
+@import url(//db.onlinewebfonts.com/c/19580604133dfd68ae370ddc889aedab?family=Futura+Lt+BT);
+
 body{
-  font-family: 'PT Serif', serif;
+  font-family: 'Futura Lt BT', serif;
 }
 
 
