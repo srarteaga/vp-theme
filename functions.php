@@ -284,3 +284,5 @@ function get_post_views($post_ID){
     }
     return $count;
 }
+
+add_theme_support( 'title-tag' );
