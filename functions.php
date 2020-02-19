@@ -286,3 +286,26 @@ function get_post_views($post_ID){
 }
 
 add_theme_support( 'title-tag' );
+ 
+//Añadimos la información Open Graph
+function insert_fb_in_head() {
+    global $post;
+    if ( !is_singular()) //Si no es un post o página
+        return;
+        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+        echo '<meta property="og:type" content="article"/>';
+        echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+    if(!has_post_thumbnail( $post->ID )) { 
+      if( has_site_icon() ) {
+        $site_icon = get_site_icon_url();
+        echo '<meta property="og:image" content="' . $site_icon . '"/>';
+      } 
+    }
+    else{
+        $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+        echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+    }
+    echo "
+";
+}
+add_action( 'wp_head', 'insert_fb_in_head', 5 );
