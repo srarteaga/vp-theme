@@ -17,7 +17,12 @@ body{
   font-family: 'Futura Lt BT', serif;
 }
 
-
+.non-selectable {
+   -moz-user-select: none; 
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none; 
+}
 .header-homepage:not(.header-slide).background-overlay,.header-homepage:not(.header-slide).color-overlay::before{
   opacity:0.3;
   background:#000000;

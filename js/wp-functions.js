@@ -31,6 +31,15 @@ $('#menu-social > li > a').removeClass("nav-link").addClass("");
 
 $('#galery > .ngg-galleryoverview > .ngg-navigation').addClass("m-hidden");
 
+$(document).ready(function () {
+    //Disable part of page
+    $("#single-page").on("contextmenu",function(e){
+        return false;
+    });
 
+   	$('#single-page').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+});
 
 

@@ -294,7 +294,7 @@ function insert_fb_in_head() {
         return;
         echo '<meta property="og:title" content="' . get_the_title() . '"/>';
         echo '<meta property="og:type" content="article"/>';
-        echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+        echo '<meta property="og:url" content="' . get_permalink() . '/"/>';
     if(!has_post_thumbnail( $post->ID )) { 
       if( has_site_icon() ) {
         $site_icon = get_site_icon_url();
