@@ -10,7 +10,7 @@ function wp_scripts_actions() {
 add_action( 'wp_enqueue_scripts', 'wp_scripts_actions' );
 
 function wp_style_actions(){
-/*  wp_enqueue_style( 'fa', get_template_directory_uri().'/css/font-awesome.min.css' );*/
+ wp_enqueue_style( 'fa', get_template_directory_uri().'/css/font-awesome.min.css' );
   wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.min.css' );
   wp_enqueue_style( 'mdb', get_template_directory_uri().'/css/mdb.min.css' );
   wp_enqueue_style( 'custom', get_stylesheet_uri() );

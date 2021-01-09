@@ -29,7 +29,7 @@ body{
 }
 
 .header-homepage .header-description-row{
-  padding-top: 26%;c
+  padding-top: 26%;
   padding-bottom:26%;
 }
 
@@ -105,10 +105,7 @@ hr#separator-container{
   color: #EC9803;
   font-weight: 600;
 }
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-  }
-}
+
 .view {
   height: 100%; 
 }
@@ -118,9 +115,7 @@ hr#separator-container{
 .top-nav-collapse {
   background-color: #275A9B;
 }
-.navbar-color {
-    
-  } 
+
 
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -220,7 +215,7 @@ margin-top: 10px;
   content: "";
   display: inline-block;
   font-family: FontAwesome;
-  font-size: 30px;
+  font-size: 30;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -243,10 +238,10 @@ margin-top: 10px;
   box-shadow: inset -1px 0px 43px -3px rgba(0,0,0,0.41);
 }
 #menu-social li a[href*="www.facebook.com"]::before {
-  content: "\f39e";
+  content: "\f082";
 }
 #menu-social li a[href*="facebook.com"]::before {
-  content: "\f39e";
+  content: "\f082";
 }
 #menu-social li a[href*="twitter.com"]{
   background-color: #55acee;
@@ -356,9 +351,6 @@ margin-top: 10px;
     }
   .menusocial li a::before {
     font-size: 25px;
-  }
-  .icon-bar ul li a{
-
   }
   .imagen-carousel{
     height: 100vh;
@@ -505,16 +497,12 @@ transform: translatex(0);
 animation: marquesina 20s infinite normal linear 1s; 
 margin: 5px;
 }
-#copia{
-/*background-color: lime; */
-}
+
 @keyframes marquesina {
   0% {transform: translatex(0); }
   100% {transform: translatex(-50%); }
 }
-#orig:hover{
-  -webkit-animation-play-state: paused;
-}
+
 #orig a img:hover{
   -webkit-transform:scale(1.40);
   -moz-transform:scale(1.40);
@@ -589,7 +577,7 @@ div.border-title{
   list-style: none;
 }
 
-////////////////////////////////
+
 
 .title-entradas{
     width: 100%;
@@ -684,6 +672,9 @@ div.border-title{
   .title-entradas:before {
     margin: 0 15px 8px 0;
   }
+  #searchform #searchInput{
+    width: 50%
+  }
 }
 @media only screen and (max-width: 1250px) {
   .title-entradas:after {
@@ -692,6 +683,7 @@ div.border-title{
   .title-entradas:before {
     margin: 0 10px 8px 0;
   }
+
 }
 @media only screen and (max-width: 1190px) {
   .title-entradas:after {
@@ -700,6 +692,7 @@ div.border-title{
   .title-entradas:before {
     margin: 0 8px 8px 0;
   }
+
 }
 
 @media only screen and (max-width: 1166px) {
@@ -709,6 +702,14 @@ div.border-title{
   .title-entradas:before {
     width: 13%;
   }
+  #inputSearch{
+    width: 60% !important;
+  }
+  #searchButton{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
 }
 @media only screen and (max-width: 1038px) {
   .text-entrada{
@@ -717,7 +718,8 @@ div.border-title{
   .text-hover a{
     font-size: 16px;
   }
-}
+
+ 
   .title-entradas:after {
       margin: 0 0 6px 8px;
   }

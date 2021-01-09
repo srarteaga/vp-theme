@@ -86,7 +86,7 @@
   </div>
   <!--/.Carousel Wrapper-->
   <div class="text-center pt-6 lobster">
-    <a href="<?php echo site_url() ?>/noticias" class="btn btn-info btn-noticia" >Mas noticias</a>
+    <a href="<?php echo site_url() ?>/?page_id=5" class="btn btn-info btn-noticia" >Mas noticias</a>
   </div>
 </div>
 <div class="ml-sm-4 pb-5 pt-2">
@@ -223,6 +223,6 @@
   </div>
   <!--/.Carousel Wrapper-->
   <div class="text-center pt-6 lobster">
-    <a href="<?php echo site_url() ?>/especiales" class="btn btn-info btn-noticia" >Mas especiales</a>
+    <a href="<?php echo site_url() ?>/?page_id=130" class="btn btn-info btn-noticia" >Mas especiales</a>
   </div>
 </div>

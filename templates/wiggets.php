@@ -50,19 +50,23 @@
           <h4 class="font-Lobster pt-2 pb-2 text-dark">Twitter</h4>
           <a class="twitter-timeline" data-height="730" data-width="500" href="https://twitter.com/ViceVenezuela?ref_src=twsrc%5Etfw">Tweets por ViceVenezuela</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
         </div>
-        <div class="container-fluid">
-          <h4 class="font-Lobster pt-2 pb-2 text-dark">Facebook</h4>
-          <?php if ( is_active_sidebar( 'facebook_id' ) ) : ?>
-            <div class="facebook-feed">
-              <?php dynamic_sidebar( 'facebook_id' ); ?>
-            </div>
-          <?php endif; ?>
-        </div>
         <div class="container-fluid pb-2">
           <h4 class="font-Lobster pt-2 pb-2 text-dark">Instagram</h4>
             <div class="instagra-feed">
               <?php echo do_shortcode('[instagram-feed]'); ?>
             </div>
+        </div>
+        <div class="container-fluid">
+          <h4 class="font-Lobster pt-2 pb-2 text-dark">Facebook</h4>
+          <div class="pb-4">
+            <div class="fb-page" data-href="https://www.facebook.com/vicevenezuela" data-tabs="timeline" data-height="750" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+              <blockquote cite="https://www.facebook.com/vicevenezuela" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/vicevenezuela">
+                  Vicepresidencia de Venezuela
+                </a>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </div>
