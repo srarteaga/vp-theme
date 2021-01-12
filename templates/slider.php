@@ -112,64 +112,9 @@
           <!--First slide-->
             <div class="carousel-item active">
               <div class="row">
-<!--                 <?php
-                  $num=0;
-                  $args = array('posts_per_page' => 12,
-                    'post_type' => 'post',
-                    'category_name' => 'Especiales'
-                  );
-                  $entradas= new WP_Query($args); while($entradas->have_posts() ): $entradas->the_post();
-                    $imagen = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'carousel');
-                    $post_id = get_the_ID();
-                    $carousel = get_post_meta( $post_id, 'add_carousel', true );
-                    $ruta_imagen = $imagen[0];
-                    if ($num==4) {
-                      echo '</div></div>';
-                      echo '<div class="carousel-item">';
-                      echo '<div class="row">';
-                      $num=0;
-                    }
-                    $num++;
-                    if ($num==3) {
-                      echo '<div class="col-lg-5">';
-                    }
-                    if($num==1) {
-                      echo '<div class="offset-lg-1  col-lg-5">';
-                    }
-                ?><div class="mb-3 z-depth-2 " style="border-radius: 15px;">
-                  <div class="card" style="border-radius: 8px 8px 0px 0px !important;" >
-                    <div class="view">
-                      <img src="<?php echo $ruta_imagen; ?>" class="img-fluid img-slide">
-                      <div class="mask d-flex align-content-end flex-wrap waves-effect waves-light">
-                        <?php the_title( '<p class="text-white rgba-black-strong mt-auto p-2" style="margin-bottom: -5px;">', '</p>' );?>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body card-color text-white  w-100" style="height: 180px !important;  border-radius: 0px 0px 15px 15px;">
-                    <?php
-                      $content = get_the_excerpt();
-                      $postOutput = preg_replace('/<img[^>]+./','', $content);
-                      $postOutput = wp_filter_nohtml_kses( $postOutput );
-                      echo substr($postOutput, 0, 160)." […]"; 
-                       ?>
-                     <div>
-                       <a class="btn btn-cyan waves-effect rounded" href="<?php the_permalink() ?>">Leer mas...</a>
-                     </div>
-                  </div>
-                  </div>
-                <?php
-                  if($num==4) {
-                    echo '</div>';
-                  }
-                  if($num==2) {
-                    echo '</div>';
-                  }
-                  endwhile; wp_reset_postdata();
-                ?> -->
-
                 <?php
                   $num=0;
-                  $args = array('posts_per_page' => 12,
+                  $args = array('posts_per_page' => 4,
                     'post_type' => 'post',
                     'category_name' => 'Especiales'
                   );
