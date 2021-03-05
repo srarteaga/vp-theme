@@ -114,7 +114,7 @@
               <div class="row">
                 <?php
                   $num=0;
-                  $args = array('posts_per_page' => 4,
+                  $args = array('posts_per_page' => 12,
                     'post_type' => 'post',
                     'category_name' => 'Especiales'
                   );

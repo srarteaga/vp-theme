@@ -70,18 +70,20 @@
               <table class="table">
                 <tbody>
                   
-                  <?php $args = array(
-                    'type'            => 'postbypost',
-                    'limit'           => '5',
-                    'format'          => 'custom', 
-                    'before'          => '<tr><td class="text-hover">',
-                    'after'           => '</td></tr>',
-                    'show_post_count' => false,
-                    'echo'            => 1,
-                    'order'           => 'DESC',
+                  <?php 
+                    $args = array(
+                      'type'            => 'postbypost',
+                      'limit'           => '5',
+                      'format'          => 'custom', 
+                      'before'          => '<tr><td class="text-hover">',
+                      'after'           => '</td></tr>',
+                      'show_post_count' => false,
+                      'echo'            => 1,
+                      'order'           => 'DESC',
                       'post_type'     => 'post'
-                  );
-                  wp_get_archives( $args ); ?>
+                    );
+                    wp_get_archives( $args ); 
+                  ?>
                   
                 </tbody>
               </table>

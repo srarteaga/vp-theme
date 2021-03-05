@@ -26,9 +26,11 @@
             <img class="d-block imagen-carousel" src="<?php echo $ruta_imagen; ?>" alt="First slide">
             <div class="mask">
               <div class="fixed-bottom">
-                <a href="<?php the_permalink() ?>">
-                  <?php the_title( '<h3 class="h3-responsive text-white rgba-black-strong pb-5 w-100 text-center font-weight-bold" style="margin-bottom: -5px;">', '</h3>' );?>
-                </a>
+                <?php if( has_category( array(16,'foto'), $post_id) != true ){ ?>
+                    <a href="<?php the_permalink() ?>">
+                      <?php the_title( '<h3 class="h3-responsive text-white rgba-black-strong pb-5 w-100 text-center font-weight-bold" style="margin-bottom: -5px;">', '</h3>' );?>
+                    </a>
+                <?php } ?>
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'carousel', 1300, 650, true );
 add_image_size( 'car-especial', 250, 250, true );
 
-function noticia_init() {
+/* function noticia_init() {
     $labels = array(
         'name'              => _x( 'Noticia', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'     => _x( 'Noticias', 'post type general name', 'your-plugin-textdomain' ),
@@ -87,7 +87,7 @@ function noticia_init() {
     register_post_type( 'noticia', $args );
 }
 
-add_action( 'init', 'noticia_init' );
+add_action( 'init', 'noticia_init' ); */
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -309,3 +309,32 @@ function insert_fb_in_head() {
 ";
 }
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
+add_filter( 'getarchives_where', 'customarchives_where' );
+add_filter( 'getarchives_join', 'customarchives_join' );
+
+function customarchives_join( $join ) {
+
+    global $wpdb;
+
+    return $join . " INNER JOIN $wpdb->term_relationships 
+                     ON ($wpdb->posts.ID = $wpdb->term_relationships.object_id) 
+                     INNER JOIN $wpdb->term_taxonomy 
+                     ON ($wpdb->term_relationships.term_taxonomy_id = $wpdb->term_taxonomy.term_taxonomy_id)";
+
+}
+
+function customarchives_where( $where ) {
+
+    global $wpdb;
+
+    $exclude = '16'; // category id to exclude
+
+    return $where . " AND $wpdb->term_taxonomy.taxonomy = 'category' 
+                      AND $wpdb->term_taxonomy.term_id 
+                      NOT IN ($exclude)";
+
+}
+
+
+
