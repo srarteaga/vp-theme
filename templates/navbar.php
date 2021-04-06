@@ -18,7 +18,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <!-- navbar -->
-  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="margin-bottom: -5px !important; margin-top: 5px !important;"> 
     <?php
       wp_nav_menu(array(
         'theme_location' => 'navbar-menu',
@@ -28,8 +28,16 @@
       ));
     ?>
     <?php get_search_form(); ?> 
-    <?php echo do_shortcode('[gtranslate]'); ?>
+    <div class="position-relative">
+    <img class="float-right d-none d-lg-block" src="<?php echo get_stylesheet_directory_uri() ?>/img/cintillo200.png" style="height: 6vh;">
+      <div class="position-relative text-center">
+        <?php echo do_shortcode('[gtranslate]'); ?>
+      </div>
+    </div>
   </div>
+
+
+    
 
 </nav>
 
