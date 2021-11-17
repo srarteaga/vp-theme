@@ -11,7 +11,7 @@
       ?>
       <div class="row no-gutters" id="single-page">
         <div class="offset-md-1 col-md-8">
-          <div class="container non-selectable">
+          <div class="container">
             <?php the_title( '<h2 class="h2-responsive text-center pt-2 pb-2">', '</h2>' );?>
             <img class="d-block w-100 pb-5" src="<?php echo $ruta_imagen; ?>" title="<?php the_title() ?>" alt="Cabecera de sitio <?php the_title() ?>" >
             <?php the_content(); ?>
