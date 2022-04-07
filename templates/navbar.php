@@ -30,7 +30,7 @@
     <?php get_search_form(); ?> 
     <div class="position-relative">
     <img class="float-right d-none d-lg-block" src="<?php echo get_stylesheet_directory_uri() ?>/img/cintillo200.png" style="height: 6vh;">
-    <img class="float-right d-none d-lg-block mr-2" src="<?php echo get_stylesheet_directory_uri() ?>/img/cintillos nav web_vicepresidencia.png" style="height: 6vh; width: 60px;">
+    <!-- <img class="float-right d-none d-lg-block mr-2" src="<?php /* echo get_stylesheet_directory_uri() */ ?>/img/cintillos nav web_vicepresidencia.png" style="height: 6vh; width: 60px;"> -->
       <div class="position-relative text-center">
         <?php echo do_shortcode('[gtranslate]'); ?>
       </div>
